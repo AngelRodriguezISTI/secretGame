@@ -25,9 +25,9 @@ function verificarIntento () {
     } else {
         //el usuario no acerto
         if (numeroUsuario > numeroSectreto) {
-            asignarTextoElemento('p','El secreto es menor');
+            asignarTextoElemento('p','El numero secreto es menor');
         } else {
-            asignarTextoElemento('p', 'El secreto es mayor');
+            asignarTextoElemento('p', 'El numero secreto es mayor');
         }
         intentos++;
         limpiarCaja();
@@ -53,7 +53,7 @@ function generarNumeroSecreto() {
     
 }
 function condicionesIniciales (){
-    asignarTextoElemento('h1', 'Este es el titulo del juego');
+    asignarTextoElemento('h1', 'adivina adivinador');
     asignarTextoElemento('p', `Coloca un numero del 1 al ${numeroMaximo}`);
     numeroSectreto = generarNumeroSecreto();
     intentos = 1;
